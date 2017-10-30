@@ -1,7 +1,8 @@
 (during presentation we worked in a group figure out what the defintion is)
 
 ##### text analysis: 
-the process of identifing/tracking/comparing trends and patterns within a text based data (latin: things given) set to find new information
+the process of identifing/tracking/comparing trends and patterns within a text based data (latin: things given) 
+set to find new information
 
 
 (not ecessarilly using techynoloy to do text analysis ex. close reading, and also it is a process not necessarily tool
@@ -12,6 +13,7 @@ AntConc (creates corpus, finds collocates-words that appear frequently together-
 corpus.byu.edu (word search in google books)
 
 Class:
-Topic Modeling
-model for topics (charts, -greaworks.net-, Voyant Tools - not always best tool...shows you the topic rise or decrease in a single article in each row)
+Topic Modeling: you have to give it things to look for. tool to think with. 
+model for topics (charts, -greaworks.net-, Voyant Tools - not always best tool...
+shows you the topic rise or decrease in a single article but not how important each word is (%) within article)
 
