@@ -1,0 +1,78 @@
+Robert volunteered to run this "how to" session for students which was incredibly
+educational. It was all simple but great for me as a beginner programmer. I found 
+it pleasurable and relaxing to write code. He explained things in a simple and quick
+way that helped me understand concepts easily. It inspired me to do more...though I'd
+have to take my desktop out of it's dusty box. My laptops are mediocre...I brought my
+laptop which had to update for almost 20min then didn't want to connect to the internet
+so I could upload python...I tried to use online python coding websites...but they 
+couldn't download/identify tkinter.
+I ended up using a spare laptop Robert had.
+As frustrating as the morning was, the rest of the session was uplifting. I think I will
+try configuring my chromebook (which has some storage space) and do coding on it. Maybe 
+this would be an opportunity to learn linux.
+Robert and I spoke about laptops vs desktops and how his students function on each.
+He says he has to do some "marriage concelling" for group projects because some people
+are used to working on laptops (where they can meet on campus or anywhere else) while others
+are more comfortable working on their desktops at home. 
+
+Below are some codes I made (and they worked!):
+
+
+from tkinter import *
+from tkinter import messagebox
+from tkinter import simpledialog
+
+def greet():
+    ans=simpledialog.askstring("Input","What is your name?")
+    messagebox.showinfo("Greet","Hello "+ ans)
+    ans=simpledialog.askinteger("Input","What is your age?",
+                            minvalue=0, maxvalue=100)
+    
+root=Tk()
+Greetbutton=Button(text="hi",command=greet)
+
+Greetbutton.grid()
+root.mainloop()
+
+_____________________________
+Check out:
+Game.py … make some simple games and look into how the code works in them.
+
+____________________________
+
+from tkinter import *
+from tkinter import messagebox
+    
+root = Tk()
+
+l = Label(text="Welcome!")
+cupic = PhotoImage(file="falcon.gif")
+p = Label(image=cupic)
+
+def doit():
+    messagebox.showinfo(message="Scale is "+ str(s.get()))
+b = Button(text='Press Me', command=doit)
+
+q = Button(text="Quit", command=exit)
+s = Scale(from_=0, to=100, orient=HORIZONTAL,length=200)
+
+def switchblue():
+    root.configure(bg="blue")
+def switchpink():
+    root.configure(bg="pink")
+
+r12 = IntVar()
+
+r1 = Radiobutton(text="Blue", variable=r12,value=1,command=switchblue)
+r2 = Radiobutton(text="Pink", variable=r12,value=2,command=switchpink)
+
+p.grid(row=0,column=0); l.grid(row=0,column=1)
+b.grid(row=1,column=0); q.grid(row=1,column=1)
+r1.grid(row=1,column=2); r2.grid(row=1,column=3)
+s.grid(row=3,columnspan=4)
+
+root.mainloop()
+
+___________________________________
+
+Think of a program that’s useful to you and let Robert know about it...He wants to help you.
